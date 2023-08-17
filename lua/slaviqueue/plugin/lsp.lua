@@ -2,11 +2,17 @@ return {
   'neovim/nvim-lspconfig',
   dependencies = {
     { 'williamboman/mason.nvim' },
-    { 'j-hui/fidget.nvim', tag = 'legacy', opts = {} },
+    { 'j-hui/fidget.nvim',                tag = 'legacy', opts = {} },
     { 'folke/neodev.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
     { 'jose-elias-alvarez/null-ls.nvim' },
     { 'jay-babu/mason-null-ls.nvim' },
+    {
+      'ray-x/lsp_signature.nvim',
+      event = 'VeryLazy',
+      opts = {},
+      config = true,
+    },
   },
   config = function()
     local on_attach = function(_, bufnr)
