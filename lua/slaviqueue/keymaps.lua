@@ -5,8 +5,6 @@ vim.g.maplocalleader = ' '
 
 vim.keymap.set('n', '<Space>', '<Nop>', opt)
 
-vim.keymap.set('n', '<leader>e', ':Lex 30<cr>', opt)
-
 vim.keymap.set('n', '<C-h>', '<C-w>h', opt)
 vim.keymap.set('n', '<C-j>', '<C-w>j', opt)
 vim.keymap.set('n', '<C-k>', '<C-w>k', opt)
