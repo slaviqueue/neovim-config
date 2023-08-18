@@ -6,13 +6,13 @@ vim.opt.signcolumn = 'yes'
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.expandtab = true
-vim.opt.hlsearch = false
 vim.opt.mouse = 'a'
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.breakindent = true
 vim.opt.undofile = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.textwidth = 80
 
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1

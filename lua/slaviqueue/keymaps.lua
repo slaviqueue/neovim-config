@@ -17,3 +17,5 @@ vim.keymap.set('v', 'p', '"_dP', opt)
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opt)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opt)
+
+vim.keymap.set('n', '<leader>h', ':noh<cr>', opt)
