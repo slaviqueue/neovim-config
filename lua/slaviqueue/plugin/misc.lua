@@ -31,4 +31,5 @@ return {
       vim.keymap.set('n', '<leader>gg', ':LazyGit<cr>', { silent = true })
     end,
   },
+  { 'lukas-reineke/indent-blankline.nvim' },
 }
