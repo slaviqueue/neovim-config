@@ -38,4 +38,10 @@ return {
     event = 'InsertEnter',
     opts = {}, -- this is equalent to setup({}) function
   },
+  {
+    'folke/trouble.nvim',
+    config = function()
+      vim.keymap.set('n', '<leader>tt', ':TroubleToggle<cr>', { silent = true })
+    end,
+  },
 }
