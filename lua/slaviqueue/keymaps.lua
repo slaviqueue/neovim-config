@@ -13,6 +13,10 @@ vim.keymap.set('n', '<C-l>', '<C-w>l', opt)
 vim.keymap.set('n', '<leader>w', ':w<cr>', opt)
 vim.keymap.set('n', '<leader>q', ':q<cr>', opt)
 
+vim.keymap.set('n', '<leader>n', ':bn<cr>', opt)
+vim.keymap.set('n', '<leader>p', ':bp<cr>', opt)
+vim.keymap.set('n', '<leader>c', ':bd<cr>', opt)
+
 vim.keymap.set('v', 'p', '"_dP', opt)
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opt)
