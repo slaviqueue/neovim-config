@@ -32,4 +32,10 @@ return {
     end,
   },
   { 'lukas-reineke/indent-blankline.nvim' },
+  { 'tpope/vim-surround' },
+  {
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    opts = {}, -- this is equalent to setup({}) function
+  },
 }
