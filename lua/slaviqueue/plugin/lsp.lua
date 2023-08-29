@@ -43,6 +43,12 @@ return {
 
     local servers = {
       clangd = {},
+
+      emmet_ls = {
+        filetypes = { 'html', 'hbs', 'handlebars' },
+      },
+      html = { filetypes = { 'html', 'twig', 'hbs', 'handlebars' } },
+
       -- gopls = {},
       -- pyright = {},
       -- rust_analyzer = {},
