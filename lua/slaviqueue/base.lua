@@ -20,6 +20,7 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.whichwrap:append 'h,l'
 
 vim.cmd 'highlight clear SignColumn'
+vim.cmd 'set nowrap'
 
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
