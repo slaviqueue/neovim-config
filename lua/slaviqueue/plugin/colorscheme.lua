@@ -9,6 +9,9 @@ return {
 
       -- a bit lighter comments
       vim.cmd 'hi Comment guifg=#666666'
+
+      -- a bit lighter line numbers
+      vim.cmd 'hi LineNr guifg=#666666'
     end,
   },
 }

@@ -31,6 +31,7 @@ return {
       vim.keymap.set('n', '<leader>gg', ':LazyGit<cr>', { silent = true })
     end,
   },
+  { 'nvim-pack/nvim-spectre' },
   { 'lukas-reineke/indent-blankline.nvim' },
   { 'tpope/vim-surround' },
   {

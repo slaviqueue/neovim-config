@@ -14,6 +14,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.textwidth = 80
 
+vim.cmd 'set nowrap'
+
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 

@@ -10,6 +10,10 @@ return {
         return vim.fn.executable 'make' == 1
       end,
     },
+    {
+      'nvim-telescope/telescope-live-grep-args.nvim',
+      version = '^1.0.0',
+    },
   },
   config = function()
     require('telescope').setup {
@@ -24,6 +28,7 @@ return {
     }
 
     pcall(require('telescope').load_extension, 'fzf')
+    require('telescope').load_extension 'live_grep_args'
 
     vim.keymap.set('n', '<leader>fo', require('telescope.builtin').oldfiles)
     vim.keymap.set('n', '<leader>fb', require('telescope.builtin').buffers)
@@ -35,8 +40,10 @@ return {
     end)
 
     vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files)
-    vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files)
-    vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep)
+    vim.keymap.set('n', '<leader>ff', function()
+      require('telescope.builtin').find_files { hidden = true }
+    end)
+    vim.keymap.set('n', '<leader>fg', require('telescope').extensions.live_grep_args.live_grep_args)
     vim.keymap.set('n', '<leader>fd', require('telescope.builtin').diagnostics)
   end,
 }
